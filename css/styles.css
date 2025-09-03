@@ -14,21 +14,13 @@ body {
     padding: 0;
 }
 
-.background {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .decorative-bar {
-height : 80px;
-  --s: 24px; /* control the size*/
+height : 40px; /*height of the decorative bar*/
+  --s: 8px; /* control the size*/
   --c1: var(--background-color);
   --c2: var(--accent-color);
   
-  --c:#0000,var(--c1) .5deg 119.5deg,#0000 120deg;
+  --c:#0000,var(--c1) .5deg 120deg,#0000 120deg;
   --g1:conic-gradient(from  60deg at 56.25% calc(425%/6),var(--c));
   --g2:conic-gradient(from 180deg at 43.75% calc(425%/6),var(--c));
   --g3:conic-gradient(from -60deg at 50%   calc(175%/12),var(--c));
@@ -42,11 +34,56 @@ height : 80px;
 
 
 .navbar {
+  /*navigation bar for the website*/
     height: 50px;
     background-color: var(--dark-accent);
     color: var(--text-color);
-    padding: 1rem;
-    text-align: center;
+    padding: 0px;
+    border: 2px solid var(--accent2-color) !important;
+}
+
+.logo {
+  /*circular logo image on the navigation bar*/
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-page-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--background-color);
+}
+
+.about-image {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.about-bottom-image {
+    width: 800px;
+    height: auto;
+    border-radius: 0px;
+    object-fit: cover;
+}
+
+.mobile-image {
+    width: 00px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid var(--background-color);
+} 
+
+.training-image {
+    width: 800px;
+    height: auto;
+    border-radius: 0px;
+    object-fit: cover;
+  
 }
 
 .btn1 {
