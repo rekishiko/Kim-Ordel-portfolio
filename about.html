@@ -10,11 +10,18 @@
 </head>
 <body> 
 
-  <div class="decorative-bar">
+<!--code for decorative bar and navigation bar. To be re-used on the various pages-->
+<div class="decorative-bar">
     </div>
-<nav class="navbar sticky-top navbar-expand-lg navbar border">
-  <div class="container-fluid">
-    <text-left class="navbar-brand mb-0 h1">Kim Ordel</text-left>
+<nav class="sticky-top navbar-expand-lg navbar border sticky-top">
+  <div class="container-fluid align-items-center">
+
+    <a class = "navbar-brand" href="index.html"> 
+      <div class="logo-container">
+    <img src="image/KO_Logo.png" class="logo img-fluid" alt="Kim Ordel Logo">
+      </div>
+    </a>
+    <span class="navbar-brand">Kim Ordel</span>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,7 +36,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="projects.html">Projects</a>
-            </li>
+          </li>
         <li class="nav-item">
           <a class="nav-link" href="Training.html">Training</a>
         </li>
@@ -37,6 +44,8 @@
     </div>
   </div>
 </nav>
+
+
 
 
 <h1 class="text-center">About</h1>
@@ -52,11 +61,34 @@
 <div class="text-center"><img src="image/vecteezy_businessman-holding-screen-interface-ai-line-graph-screen_6785803.jpg" class="about-bottom-image" alt="vector image of laptop being held open with futuristic icons floating above the screen and the letters AI">
 </div>
 
-<p class="text-center"> INSERT FORM HERE </p>
+<!--Contact form-->
+
+<div class="container mb-5">
+  <h2>Contact Me</h2>
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="firstName" class="form-label">first name</label>
+    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+    </div>
+    <div class="col-md-6">
+    Test
+    </div>
+
+   <label for="basic-url" class="form-label">Please add your email so I can get back to you.</label>
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+
 
 <footer class="text-center mt-4 mb-2">
   <p>&copy; 2025 Kim Ordel All rights reserved.</p>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

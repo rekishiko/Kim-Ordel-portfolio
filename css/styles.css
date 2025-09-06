@@ -40,6 +40,8 @@ height : 40px; /*height of the decorative bar*/
     color: var(--text-color);
     padding: 0px;
     border: 2px solid var(--accent2-color) !important;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 .logo {
@@ -79,8 +81,8 @@ height : 40px; /*height of the decorative bar*/
 } 
 
 .training-image {
-    width: 800px;
-    height: auto;
+    width: auto;
+    height: 370px;
     border-radius: 0px;
     object-fit: cover;
   
