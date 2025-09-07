@@ -1,9 +1,14 @@
 :root{
     --background-color: #06233b;
     --dark-accent: #04527e; 
-    --text-color: #ffffff;
+    --text-color: rgb(246, 249, 243);
+    --title-color1: #ffa353;
+    --title-color2: #1ef68ada;
     --text-button: #a2d6f4;
     --accent-color: #1ef68ada;
     --accent2-color: #97daed;
     --accent3-color: #80e2a1;
 }
+
+
+/*maybe text color fff8e1, paye yellow, or ffffcc it is a darker yellow*/
