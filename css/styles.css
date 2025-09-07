@@ -43,6 +43,9 @@ height : 40px; /*height of the decorative bar*/
     position: -webkit-sticky;
     position: sticky;
 }
+.nav-link {
+    color: var(--text-color);
+}
 
 .logo {
   /*circular logo image on the navigation bar*/
