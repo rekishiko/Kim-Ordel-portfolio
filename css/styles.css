@@ -94,3 +94,41 @@ height : 40px; /*height of the decorative bar*/
 .btn2 {
     background-color: var(--accent3-color);
 }
+.frosted-card{
+    background-color: rgba(27, 98, 152, 0.441);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    
+}
+.popup {
+  width: 400px;
+  height: 250px;
+  background: rgb(17, 82, 131);
+  border: 2px solid var(--accent2-color);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px; 
+  color: white; 
+  visibility: hidden;
+  transition: transform o.4s;
+}
+.popup button{
+  width: 100px;
+  background: var(--accent-color);
+  border: 2px solid var(--accent2-color);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popup.open-popup{
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
