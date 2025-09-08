@@ -21,7 +21,7 @@
     <img src="image/KO_Logo.png" class="logo img-fluid" alt="Kim Ordel Logo">
       </div>
     </a>
-    <span class="navbar-brand">Kim Ordel</span>
+    <span class="navbar-name">Kim Ordel</span>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -58,8 +58,11 @@
 <p class="text-center paragraph"> My passion for learning led me to seek out new experiences, including a year studying abroad at Yokohama National University. Living on my own for the first time in my life I not only had to adapt to a new culture but learn life skills. My experiences abroad deepened my skills in problem-solving and has become a foundational part of how I approach new challenges today.  </p>
 <p class="text-center paragraph"> My mission is to apply these skills as an educator and problem-solver to develop innovative solutions that can make a meaningful impact on the world. </p>
 
+
 <div class="text-center"><img src="image/vecteezy_businessman-holding-screen-interface-ai-line-graph-screen_6785803.jpg" class="about-bottom-image" alt="vector image of laptop being held open with futuristic icons floating above the screen and the letters AI">
 </div>
+
+
 
 <!--Contact form-->
  
@@ -68,7 +71,7 @@
     <div class="col-md-8">
       <div class = "card frosted-card">
         <div class="card-body">
-          <h2>Contact Me</h2>
+          <h2 class="contactMe">Contact Me</h2>
           <!-- Form submit code that links email to form submission-->
           <form class="row g-3" action="https://formsubmit.co/2e38829a571f74825aed012660f398e4" method="POST" action="server.php" onsubmit="handleSubmit(event)">
             <!-- Honeypot to prevent spam -->
@@ -77,6 +80,7 @@
             <!-- Disable Captcha -->
             <input type="hidden" name="_captcha" value="false">
 
+            <!--Form box inner information code-->
           <div class="col-md-6">
             <label for="firstName" class="form-label">First Name</label>
            <input type="text" class="form-control" name="first&nbsp;name" id="firstName" required placeholder="First Name">
@@ -94,7 +98,8 @@
             <textarea class="form-control" id="message" name="message" rows="3" required placeholder="Enter message or questions here"></textarea>
          </div>
         <div class="col-md-12">
-            <button type="submit" class="btn btn-primary" onlick="openPopup()">Submit</button>
+            <button type="submit" class="btn btn-primary formSubmit btn-lg" onlick="openPopup()">Submit</button>
+            
             <!-- thank you pop up -->
              <div class="popup" id="popup">
                 <h2>Thank you!</h2>
