@@ -304,11 +304,12 @@ border-width: 2px;
 }
 
 .mobile-image {
-    width: 10px;
+    width: 100px;
     height: auto;
     border-radius: 20px;
     object-fit: cover;
-    border: 4px solid var(--background-color);
+    border: 4px solid; 
+    color: var(--background-color);
 } 
 
 /* Training page styls*/ 
@@ -319,4 +320,46 @@ border-width: 2px;
     height: 370px;
     border-radius: 0px;
     object-fit: cover;
+}
+
+/* Under Construction Pop Up*/
+.comingSoonCard{
+    background-color: white;
+    border-color: var(--accent2-color);
+    border-width: 8px;
+}
+.comingSoonCard .ConstructionText{
+    color: var(--background-color);
+}
+.ConstructionImg{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.comingSoonCard .comingSoonTitle{
+    color: var(--background-color);
+    font-size: 3em;
+    text-shadow: 2px 2px 2px rgba(139, 203, 255, 0.816);
+}
+
+.comingSoonBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ReturnBtn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50rem;
+    background-color: var(--accent2-color);
+    color: var(--background-color);
+    font-weight: bold;
+}
+.ReturnBtn:hover {
+    background-color: var(--accent5-color);
+    color: var(--accent-color);
+    font-weight: bold;
 }
