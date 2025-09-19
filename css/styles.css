@@ -21,7 +21,7 @@ p {
     font-size: larger;
     color: var(--text-color);
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 70%;
 }
 
@@ -379,6 +379,15 @@ border-width: 2px;
 .trainTitle{
     margin-top: 50px;
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coverImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mountain-img{
@@ -390,51 +399,83 @@ border-width: 2px;
 }
 
 .training-image {
-    width: auto;
-    height: 370px;
+    width: 450px;
+    height: auto;
     border-radius: 0px;
     object-fit: cover;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-/* Under Construction Pop Up*/
-.comingSoonCard{
-    background-color: white;
-    border-color: var(--accent2-color);
-    border-width: 8px;
-}
-.comingSoonCard .ConstructionText{
-    color: var(--background-color);
-}
-.ConstructionImg{
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-
-.comingSoonCard .comingSoonTitle{
-    color: var(--background-color);
-    font-size: 3em;
-    text-shadow: 2px 2px 2px rgba(139, 203, 255, 0.816);
-}
-
-.comingSoonBody{
+.certImg{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 250px;
+    height: auto;
+    border-radius: 10%;
+    margin: 30px;
 }
 
-.ReturnBtn {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50rem;
-    background-color: var(--accent2-color);
-    color: var(--background-color);
-    font-weight: bold;
+.wordCloud{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
-.ReturnBtn:hover {
-    background-color: var(--accent5-color);
-    color: var(--accent-color);
-    font-weight: bold;
+
+.study-Logo{
+    width: 260px;
+    height: 260px; /*height of the decorative bar*/
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  --s: 8px; /* control the size*/
+  --c1: var(--background-color);
+  --c2: var(--accent-color);
+  
+  --c:#0000,var(--c1) .5deg 120deg,#0000 120deg;
+  --g1:conic-gradient(from  60deg at 56.25% calc(425%/6),var(--c));
+  --g2:conic-gradient(from 180deg at 43.75% calc(425%/6),var(--c));
+  --g3:conic-gradient(from -60deg at 50%   calc(175%/12),var(--c));
+  background:
+    var(--g1),var(--g1) var(--s) calc(1.73*var(--s)),
+    var(--g2),var(--g2) var(--s) calc(1.73*var(--s)),
+    var(--g3) var(--s) 0,var(--g3) 0 calc(1.73*var(--s)) 
+    var(--c2);
+  background-size: calc(2*var(--s)) calc(3.46*var(--s));
+}
+
+.logoSection{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.study-Logo img{
+    height: 190px;
+    width: 190px; 
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoCompText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.LogoCompText p{
+    padding: 0;
+    margin:0;
+}
+
+.Certs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
 }
