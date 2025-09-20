@@ -292,14 +292,11 @@ border-width: 2px;
 
 .project-top-image {
     width: 500px;
-    height: 275px;
+    height: 255px;
     border-radius: 55%;
     object-fit: cover;
     margin-top: 25px;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 80px rgba(7, 0, 0, 0.736);
-    padding-top: 10px;
-    padding-bottom: 35px; 
 }
 
 .projects-bottom-image{
@@ -653,10 +650,10 @@ height : 20px; /*height of the decorative bar*/
     margin-bottom: 20px;
 }
 .about-bottom-image {
-    width: 280px;
+    width: 260px;
     height: auto;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .contactMe{
@@ -678,6 +675,46 @@ height : 20px; /*height of the decorative bar*/
 .popup {
   width: 250px;
   height: 450px;
+}
+
+/* Projects page styles*/ 
+
+.project-top-image {
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.projects-bottom-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+
+.carousel-item {
+    width: 200px;
+    height: 300px;
+    padding: 5%;
+}
+
+.carouselImg{
+    height: 200px;
+    width: 100%;
+    border-radius: 20%;
+    border-style: solid;
+    border-color: var(--accent5-color);
+    border-width: 5px;
 }
 
 
