@@ -263,8 +263,8 @@ border-width: 2px;
 }
 
 .popup {
-  width: 400px;
-  height: 250px;
+  width: 380px;
+  height: 320px;
   background: rgb(17, 82, 131);
   border: 2px solid var(--accent2-color);
   border-radius: 10px;
@@ -281,11 +281,17 @@ border-width: 2px;
 
 .popup button{
   width: 100px;
-  background: var(--accent-color);
-  border: 2px solid var(--accent2-color);
-  color: white;
+  background: var(--accent2-color);
+    border: 2px solid var(--accent5-color);
+    color: var(--background-color);
   border-radius: 5px;
   cursor: pointer;
+}
+
+.popup button:hover{
+    background: var(--accent-color);
+  border: 2px solid var(--accent2-color);
+  color: white;
 }
 
 .popup.open-popup{
@@ -479,6 +485,8 @@ border-width: 2px;
     flex-direction: row;
 }
 
+
+
 /* media queries for adusting elements for different screen sizes */
 /* mobile 320px to 480px, tablet 481px to 768px, desktop 769 px and up */
 
@@ -487,6 +495,11 @@ h1{
     font-size: 1.4em;
 }
 
+p {
+    text-align: center;
+    font-size: .9em;
+    margin-bottom: 30px;
+}
 
 .decorative-bar {
 height : 20px; /*height of the decorative bar*/
@@ -545,13 +558,6 @@ height : 20px; /*height of the decorative bar*/
     border-radius: 50%;
 }
 
-.main-page-image{ 
-    width: 180px;
-    height: 180px;
-    margin: 10px;
-    margin-bottom: 20px;
-    
-}
 
 .contactinfo {
     font-size: .9em;
@@ -577,6 +583,16 @@ height : 20px; /*height of the decorative bar*/
 .footerInfo {
     display: flex;
     align-items: center;
+}
+
+/* main page styles*/
+
+.main-page-image{ 
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    margin-bottom: 20px;
+    
 }
 
 .homeCTA {
@@ -636,6 +652,39 @@ height : 20px; /*height of the decorative bar*/
     width: 48px;
     object-fit: cover;
 }
+
+/* About page styles */
+
+.about-image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.about-bottom-image {
+    width: 280px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contactMe{
+    color: var(--title-color1);
+    font-size: 2em;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.952);
+}
+
+
+.frosted-card{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.popup {
+  width: 250px;
+  height: 450px;
+}
+
 
 
 }
