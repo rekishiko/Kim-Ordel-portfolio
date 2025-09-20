@@ -250,17 +250,6 @@ border-width: 2px;
     padding-bottom:15px;
 }
 
-.c-item {
-    height: 400px;
-    width: 300px;
-}
-
-.c-img {
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
 .popup {
   width: 380px;
@@ -527,12 +516,17 @@ height : 20px; /*height of the decorative bar*/
     border: 2px solid var(--accent2-color) !important;
     position: -webkit-sticky;
     position: sticky;
+    padding: 0px;
+    margin: 0px;
+
 }
 
 .nav-link{
     color: var(--accent2-color);
-    font-size: .75em;
+    font-size: .9em;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.894);
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link:hover{
@@ -541,20 +535,20 @@ height : 20px; /*height of the decorative bar*/
 }
 
 .navContainer{
-    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap:0px;
 
 }
 
 .navbar-name {
-    color: var(--accent-color);
-    font-size: 2em;
-    text-shadow: 3px 3px 4px rgba(8, 46, 92, 0.952);
     display: none;
 }
 
 .logo {
   /*circular logo image on the navigation bar*/
-    height: 35px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -673,6 +667,9 @@ height : 20px; /*height of the decorative bar*/
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.952);
 }
 
+.form-label{
+    font-size: .9em;
+}
 
 .frosted-card{
     margin-top: 30px;
@@ -684,7 +681,6 @@ height : 20px; /*height of the decorative bar*/
   width: 250px;
   height: 450px;
 }
-
 
 
 }
