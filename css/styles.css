@@ -427,11 +427,34 @@ border-width: 2px;
     margin-bottom: 40px;
 }
 
+.asteroid_vid {
+    width: 600px;
+    height: auto;
+    display: inline-block;
+}
+
+.videoContainer {
+    display: inline-block;
+    border-radius: 8%;
+    overflow: hidden;
+}
+
+/*.videoContainer{
+    border-radius: 20%; /* Adjust the value for the roundness you want 
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
 .asteroid_video {
+    width: 100%;
+    height: auto;
     margin-top: 90px;
     margin-bottom: 80px;
     border-radius: 20%;
 }
+*/
 
 .vid_caption {
     margin-top: 20px;
