@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name= "description" content="Portfolio website pop up for Kim Ordel, software developer and engineer. Blog informaiton on the Asteroid project including video, images and link to github repository.">
+
+    <meta description="keywords" content="bootdev, Python, CSS, HTMl, tutorial, project, pygame, video, images, blog, developer, portfolio">
+    <meta name="author" content="Kim Ordel">
+    <title>Kim Ordel Portfolio: Asteroid Project</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body id="asteroid-page"> 
+    <!--code for decorative bar and navigation bar. To be re-used on the various pages-->
+<div class="decorative-bar"></div>
+<nav class="sticky-top navbar-expand navbar border sticky-top">
+  <div class="container-fluid align-items-center navContainer">
+
+     <a class = "navbar-brand" href="index.html"> 
+      <div class="logo-container">
+    <img src="image/KO_Logo.png" class="logo img-fluid" alt="Kim Ordel Logo">
+      </div>
+    </a>
+    <span class="navbar-name">Asteroid Game</span>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Return to Projects</a>
+          </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1 class="text-center asteroid_text" >What I learned from the Asteroid Game</h1>
+
+<!-- Description of project -->
+<div class="asteroidGame_info">
+<p> This project was created as part of the Boot.dev curriculum for learning backend engineering and mastering Python. The project comes after the initial lessons for Python to learn about using libraries and modules. The goal of this project was to learn how to use pygame to create a simple python game.</p>
+
+<!-- Video from project --> 
+ <div class="text-center asteroid_video">
+<video width="520" height="500" controls poster="placeholder.jpg" class="asteroid_vid">
+  <source src="image/asteroid/asteroid_game.mp4" type="video/mp4">
+  <source src="image/asteroid/asteroid_game.webm" type="video/webm">
+  There is an issue, your browser does not support the video type.
+</video>
+<p class="vid_caption"> This video demonstrates the Asteroid Game I created using Python and Pygame from the Boot.dev tutorial. It shows the overpowered shots as well as the regular style shots. It also shows the custom end screen I created and added to the game.</p>
+</div>
+
+<!-- Description of project -->
+<div class="asteroid_paragraph">
+<h2 class="text-center projText">What is the asteroid game?</h2>
+
+<div class="screenshot-container"> <img src="image/asteroid/asteroid4.png" class="img-fluid asteroid_screenshot" alt="Asteroid Game Screenshot">
+<img src="image/asteroid/asteroid2.png" class="img-fluid asteroid_screenshot" alt="Asteroid Game Screenshot"></div>
+
+
+<p> As part of the back-end developer path on Boot.dev there are projects to test out what you have been learning and use it in a functional manner. Following the courses on "Learn to Code in Python", "Learn Linux" "Learn Git" "Learn Object Oriented Programming in Python" is the "Build Asteroids using Python and Pygame"     </p>
+
+<p> These screenshots show the main layout of the game. It starts with a triangle representing the player's ship in a black field. Orange circles appear randomly, representing the asteroids, which bounce around the screen. The player can rotate using the arrow keys and shoot using the space bar. If the player shoots an asteroid it divides itself into smaller asteroids. This division increases the total number of asteroids on the screen, making the game more complex. Asteroids disappear when they get too small. The game ends when an asteroid touches the player's ship. </p>
+
+
+<h2 class="text-center projText">What is Boot.dev?</h2>
+<div class="bootdevBanner"> 
+  <img src="image/bootdev-banner.png" class="img-fluid bootdev_banner" alt="Asteroid Game Screenshot">
+    
+</div>
+
+<p> Boot.dev is an online learning platform that focuses on teaching coding and development skills. It offers a variety of courses and projects designed to help learners build practical skills in web development, backend development, and other programming areas. The platform emphasizes hands-on learning through interactive coding exercises and real-world projects. </p>
+
+<p> Boot.dev focuses on back-end skills, since they see this as an area that is often overlooked on other training platforms. Most training programs around focus on front-end and may add in some full-stack elements. Boot.dev's lessons help users learn about back-end development by having them work through exercises as if they are building a game. Each chapter has a lesson that builds skills, often including challenges. Boot.dev also recently released a training ground where users can continue practicing skills after completing a section's lessons and challenges</p>
+
+<p> Boot.dev also includes projects every few lessons to help users put what they are learning together. While the lessons are completed online on Boot.devs servers the projects are developed on the user's computer, with sections put through validation tests on Boot.dev. This allows the user to develop skills in project setup and problem-solving.</p>
+
+<h2 class="text-center projText"> How I developed the asteroid game</h2>
+
+<div class="screenshot-container"> 
+<img src="image/asteroid/asteroid6.png" class="img-fluid asteroid_screenshot" alt="Asteroid Game Screenshot">
+
+<img src="image/asteroid/asteroid7.png" class="img-fluid asteroid_screenshot" alt="Asteroid Game Screenshot">
+</div>
+<p> The guided tutorial starts by teaching you to set up the development environment on the desktop. I learned skills in creating a virtual environment and ensuring Python was correctly configured on my computer. I also had to download the Pygame extension and ensure it ran correctly within the virtual environment. </p>
+
+<p> During this part, I learned about virtual environments and their importance: they prevent external libraries or add-ons from one project from conflicting with others on the main computer. Keeping a clean workspace with virtual environments set up for each project ensures it only has what is needed.</p>
+
+
+<p> Once the environment was set up, I followed the tutorial to create the game. The tutorial starts with us setting up the main.py file so our program has a file to run from. We also import the pygame and make sure that we have the correct files to run our game.</p>
+
+
+<p> After setting up the main file the next step was creating the game world and sprites. This involved importing elements (including using the * wildcard) and learning how to build a game loop to set up the game screen and world. I created sprites to represent the asteroids and the player. After establishing the basic design, I set up the movement for the player and the asteroids. Eventually, we programmed the asteroids to split when hit, which was an interesting and challenging coding exercise.</p>
+
+<div class="screenshot-container"> 
+<img src="image/asteroid/asteroid7.png" class="img-fluid asteroid_screenshot" alt="Asteroid Game Screenshot">
+
+<img src="image/asteroid/asteroid5.png" class="img-fluid asteroid_screenshot" alt="Asteroid Game Screenshot">
+
+</div>
+<p> After the basic movement and sprite setup, I learned how to create the shooting mechanism. The initial shooting is continuous, but the firing mechanism to allow only one shot at a time. I liked the idea of having the multiple shots so I created a separate mode that overpowered the player and allowed them to use the continuous shooting when the "k" button is pressed. The video shows the regular shooting and overpowered shooting. Many of the screenshots show the player with the continuous shooting</p>
+
+<div class="screenshot-container"> 
+<img src="image/asteroid/asteroid3.png" class="img-fluid asteroid_screenshot" alt="Asteroid Game Screenshot">
+</div>
+<p> When the tutorial finished I decided I wanted to add on to the game. I felt like there should be some sort of message when the game ended. So I researched how to create a game over screen and code it to appear when an asteroid touches the player's character. This addition demonstrates my creativity and desire to improve by going beyond the original program. While it is a simple screen, it shows my motivation to research and implement new features.</p>
+
+<div class="screenshot-container"> 
+<img src="image/asteroid/gameOver.png" class="img-fluid asteroid_screenshot" alt="Asteroid Game Screenshot">
+</div>
+
+<h2 class="text-center projText">What I Learned </h2>
+
+<p> This project involved learning how to override methods and use Pygame functions. As one of my first projects, it taught me essential practices like setting up projects, creating virtual environments, and using GitHub. I gained confidence in using the terminal to navigate directories, set up project folders, and initiate virtual environments. This project was key to learning core software engineering organizational skills, including file setup and managing directories. I also learned to set up GitHub repositories and use Git commands to save and push changes. Although it was a small project, it was invaluable for gaining knowledge of Git and GitHub workflows, including accessing and updating a repository.</p>
+
+<p> Overall, this project was a great introduction to Python, Pygame, and essential software engineering practices. This project clarified my understanding of Object-Oriented Programming (OOP), which I had previously only applied in Java. It built my confidence and skills for future development work.</p>
+
+</body>
